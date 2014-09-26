@@ -1,0 +1,42 @@
+[
+    {
+        "displayName": "Ruby",
+        "category": "Samples - Hello World",
+        "description": "A simple Ruby application.",
+        "source": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/desktop-basic-ruby21-simple.git",
+            "parameters": {
+                "branch": "3.1.0",
+                "cleanVcs": "true"
+            }
+        },
+        "defaultRunnerEnvironment": "ruby212",
+        "runnerEnvironmentConfigurations": {
+            "default": {
+                "recommendedMemorySize": 256
+            }
+        },
+        "runnerName": "ruby-standalone-default"
+    },
+    {
+        "displayName": "Rails",
+        "category": "Samples - Hello World",
+        "description": "A simple Rails application.",
+        "source": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-rails403-ruby21-simple.git",
+            "parameters": {
+                "branch": "3.1.0",
+                "cleanVcs": "true"
+            }
+        },
+        "defaultRunnerEnvironment": "ruby210_rails403",
+        "runnerEnvironmentConfigurations": {
+            "default": {
+                "recommendedMemorySize": 256
+            }
+        },
+        "runnerName": "ruby-webapp-default"
+    }
+]

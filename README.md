@@ -1,2 +1,2 @@
-plugin-php
+plugin-ruby
 ==========

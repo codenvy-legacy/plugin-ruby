@@ -15,7 +15,7 @@ public interface ProjectAttributes {
     String RUBY_ID             = "ruby";
     String RUBY_NAME           = "Ruby Project";
     String RUBY_CATEGORY       = "Ruby";
-    String RUBY_DEFAULT_RUNNER = "ruby-standalone-default";
 
-    String RUBY_DEFAULT_PROJECT_GENERATOR = "ruby-simple";
+    String RUBY_DEFAULT_RUNNER = "ruby-standalone-default";
+    String RUBY_DEFAULT_RUNNER_ENVID = "ruby210";
 }

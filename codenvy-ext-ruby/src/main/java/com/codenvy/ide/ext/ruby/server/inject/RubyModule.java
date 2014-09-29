@@ -10,13 +10,10 @@
  *******************************************************************************/
 package com.codenvy.ide.ext.ruby.server.inject;
 
-import com.codenvy.api.project.server.ProjectGenerator;
-import com.codenvy.ide.ext.ruby.server.project.generator.SimpleProjectGenerator;
 import com.codenvy.ide.ext.ruby.server.project.type.RubyProjectTypeDescriptionExtension;
 import com.codenvy.ide.ext.ruby.server.project.type.RubyProjectTypeExtension;
 import com.codenvy.inject.DynaModule;
 import com.google.inject.AbstractModule;
-import com.google.inject.multibindings.Multibinder;
 
 /** @author Vladyslav Zhukovskii */
 @DynaModule
@@ -26,8 +23,5 @@ public class RubyModule extends AbstractModule {
     protected void configure() {
         bind(RubyProjectTypeExtension.class);
         bind(RubyProjectTypeDescriptionExtension.class);
-
-        Multibinder<ProjectGenerator> multiBinder = Multibinder.newSetBinder(binder(), ProjectGenerator.class);
-        multiBinder.addBinding().to(SimpleProjectGenerator.class);
     }
 }

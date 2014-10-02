@@ -35,8 +35,7 @@ public class RubyProjectTypeDescriptionExtension implements ProjectTypeDescripti
     @Override
     public List<ProjectType> getProjectTypes() {
         final List<ProjectType> list = new ArrayList<>(1);
-        list.add(new ProjectType(ProjectAttributes.RUBY_ID, ProjectAttributes.RUBY_NAME, ProjectAttributes.RUBY_CATEGORY, null,
-                                 ProjectAttributes.RUBY_DEFAULT_RUNNER));
+        list.add(new ProjectType(ProjectAttributes.RUBY_ID, ProjectAttributes.RUBY_NAME, ProjectAttributes.RUBY_CATEGORY));
         return list;
     }
 

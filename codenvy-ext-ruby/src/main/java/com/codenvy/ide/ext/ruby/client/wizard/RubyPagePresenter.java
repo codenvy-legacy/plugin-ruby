@@ -106,8 +106,6 @@ public class RubyPagePresenter extends AbstractWizardPage implements RubyPageVie
         projectDescriptorToUpdate.setVisibility(getProjectVisibility());
         final String name = wizardContext.getData(ProjectWizard.PROJECT_NAME);
         projectDescriptorToUpdate.setDescription(wizardContext.getData(ProjectWizard.PROJECT_DESCRIPTION));
-        projectDescriptorToUpdate.setRunner(ProjectAttributes.RUBY_DEFAULT_RUNNER);
-        projectDescriptorToUpdate.setDefaultRunnerEnvironment(ProjectAttributes.RUBY_DEFAULT_RUNNER_ENVID);
         final ProjectDescriptor project = wizardContext.getData(ProjectWizard.PROJECT);
         if (project != null) {
             if (project.getName().equals(name)) {

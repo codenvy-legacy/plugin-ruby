@@ -40,8 +40,7 @@ public class RubyProjectTypeExtension implements ProjectTypeExtension {
     public RubyProjectTypeExtension(ProjectTypeDescriptionRegistry registry,
                                     ProjectTemplateDescriptionLoader projectTemplateDescriptionLoader) {
         this.projectTemplateDescriptionLoader = projectTemplateDescriptionLoader;
-        this.projectType = new ProjectType(ProjectAttributes.RUBY_ID, ProjectAttributes.RUBY_NAME, ProjectAttributes.RUBY_CATEGORY, null,
-                                           ProjectAttributes.RUBY_DEFAULT_RUNNER);
+        this.projectType = new ProjectType(ProjectAttributes.RUBY_ID, ProjectAttributes.RUBY_NAME, ProjectAttributes.RUBY_CATEGORY);
         registry.registerProjectType(this);
     }
 

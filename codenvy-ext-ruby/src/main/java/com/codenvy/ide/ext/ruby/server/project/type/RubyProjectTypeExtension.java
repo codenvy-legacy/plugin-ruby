@@ -10,6 +10,7 @@
  *******************************************************************************/
 package com.codenvy.ide.ext.ruby.server.project.type;
 
+import com.codenvy.api.project.server.ProjectTemplateDescriptionLoader;
 import com.codenvy.api.project.server.ProjectTypeDescriptionRegistry;
 import com.codenvy.api.project.server.ProjectTypeExtension;
 import com.codenvy.api.project.shared.Attribute;
@@ -17,7 +18,6 @@ import com.codenvy.api.project.shared.ProjectTemplateDescription;
 import com.codenvy.api.project.shared.ProjectType;
 import com.codenvy.ide.Constants;
 import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
-import com.codenvy.ide.server.ProjectTemplateDescriptionLoader;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 

@@ -16,7 +16,7 @@ import com.codenvy.api.project.server.ProjectTypeExtension;
 import com.codenvy.api.project.shared.Attribute;
 import com.codenvy.api.project.shared.ProjectTemplateDescription;
 import com.codenvy.api.project.shared.ProjectType;
-import com.codenvy.ide.Constants;
+import com.codenvy.api.project.shared.Constants;
 import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;

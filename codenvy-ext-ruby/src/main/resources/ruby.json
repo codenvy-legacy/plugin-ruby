@@ -8,7 +8,7 @@
             "location": "https://github.com/codenvy-templates/desktop-basic-ruby21-simple.git",
             "parameters": {
                 "branch": "3.1.0",
-                "cleanVcs": "true"
+                "keepVcs": "false"
             }
         },
         "defaultRunnerEnvironment": "ruby212",
@@ -28,7 +28,7 @@
             "location": "https://github.com/codenvy-templates/web-rails403-ruby21-simple.git",
             "parameters": {
                 "branch": "3.1.0",
-                "cleanVcs": "true"
+                "keepVcs": "false"
             }
         },
         "defaultRunnerEnvironment": "ruby210_rails403",

@@ -12,8 +12,8 @@ package com.codenvy.ide.ext.ruby.server.project.type;
 
 import com.codenvy.api.project.server.ProjectTypeDescriptionExtension;
 import com.codenvy.api.project.server.ProjectTypeDescriptionRegistry;
-import com.codenvy.api.project.shared.AttributeDescription;
-import com.codenvy.api.project.shared.ProjectType;
+import com.codenvy.api.project.server.AttributeDescription;
+import com.codenvy.api.project.server.ProjectType;
 import com.codenvy.api.project.shared.Constants;
 import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
 import com.google.inject.Inject;

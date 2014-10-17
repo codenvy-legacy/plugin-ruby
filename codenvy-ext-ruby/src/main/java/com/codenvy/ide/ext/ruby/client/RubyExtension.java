@@ -44,6 +44,6 @@ public class RubyExtension {
 
         projectTypeWizardRegistry.addWizard("ruby", wizard);
 
-        iconRegistry.registerIcon(new Icon("ruby.samples.category.icon", parserResource.rubyCategoryIcon()));
+        iconRegistry.registerIcon(new Icon("Ruby.samples.category.icon", parserResource.rubyCategoryIcon()));
     }
 }

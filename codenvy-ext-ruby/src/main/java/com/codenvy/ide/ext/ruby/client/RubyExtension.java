@@ -17,6 +17,7 @@ import com.codenvy.ide.api.notification.NotificationManager;
 import com.codenvy.ide.api.projecttype.wizard.ProjectTypeWizardRegistry;
 import com.codenvy.ide.api.projecttype.wizard.ProjectWizard;
 import com.codenvy.ide.ext.ruby.client.wizard.RubyPagePresenter;
+import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
 import com.codenvy.ide.extension.runner.client.wizard.SelectRunnerPagePresenter;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.inject.Inject;
@@ -44,6 +45,6 @@ public class RubyExtension {
 
         projectTypeWizardRegistry.addWizard("ruby", wizard);
 
-        iconRegistry.registerIcon(new Icon("Ruby.samples.category.icon", parserResource.rubyCategoryIcon()));
+        iconRegistry.registerIcon(new Icon(ProjectAttributes.RUBY_CATEGORY + ".samples.category.icon", parserResource.rubyCategoryIcon()));
     }
 }

@@ -36,9 +36,12 @@ public class RubyExtension {
     }
 
     @Inject
-    public RubyExtension(Provider<RubyPagePresenter> rubyPagePresenterProvider, Provider<SelectRunnerPagePresenter> runnerPagePresenter,
-                         NotificationManager notificationManager, ProjectTypeWizardRegistry projectTypeWizardRegistry,
-                         ParserResource parserResource, IconRegistry iconRegistry) {
+    public RubyExtension(Provider<RubyPagePresenter> rubyPagePresenterProvider,
+                         Provider<SelectRunnerPagePresenter> runnerPagePresenter,
+                         NotificationManager notificationManager,
+                         ProjectTypeWizardRegistry projectTypeWizardRegistry,
+                         ParserResource parserResource,
+                         IconRegistry iconRegistry) {
         ProjectWizard wizard = new ProjectWizard(notificationManager);
         wizard.addPage(rubyPagePresenterProvider);
         wizard.addPage(runnerPagePresenter);

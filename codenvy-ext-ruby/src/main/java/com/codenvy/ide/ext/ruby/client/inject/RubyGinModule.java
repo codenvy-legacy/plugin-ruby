@@ -11,10 +11,10 @@
 package com.codenvy.ide.ext.ruby.client.inject;
 
 import com.codenvy.ide.api.extension.ExtensionGinModule;
-import com.codenvy.ide.ext.ruby.client.wizard.RubyPageView;
-import com.codenvy.ide.ext.ruby.client.wizard.RubyPageViewImpl;
+import com.codenvy.ide.api.projecttype.wizard.ProjectWizardRegistrar;
+import com.codenvy.ide.ext.ruby.client.wizard.RubyProjectWizardRegistrar;
 import com.google.gwt.inject.client.AbstractGinModule;
-import com.google.inject.Singleton;
+import com.google.gwt.inject.client.multibindings.GinMultibinder;
 
 /** @author Vladyslav Zhukovskii */
 @ExtensionGinModule
@@ -22,6 +22,6 @@ public class RubyGinModule extends AbstractGinModule {
     /** {@inheritDoc} */
     @Override
     protected void configure() {
-        bind(RubyPageView.class).to(RubyPageViewImpl.class).in(Singleton.class);
+        GinMultibinder.newSetBinder(binder(), ProjectWizardRegistrar.class).addBinding().to(RubyProjectWizardRegistrar.class);
     }
 }

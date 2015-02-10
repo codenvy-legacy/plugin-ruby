@@ -8,20 +8,19 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.ide.ext.ruby.server.inject;
+package com.codenvy.ide.ext.ruby.server.project.type;
 
 import com.codenvy.api.project.server.type.ProjectType;
-import com.codenvy.ide.ext.ruby.server.project.type.RubyProjectType;
-import com.codenvy.inject.DynaModule;
-import com.google.inject.AbstractModule;
-import com.google.inject.multibindings.Multibinder;
+import com.codenvy.api.project.shared.Constants;
+import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
 
-/** @author Vladyslav Zhukovskii */
-@DynaModule
-public class RubyModule extends AbstractModule {
-    /** {@inheritDoc} */
-    @Override
-    protected void configure() {
-        Multibinder.newSetBinder(binder(), ProjectType.class).addBinding().to(RubyProjectType.class);
+/**
+ * @author Vitaly Parfonov
+ */
+public class RubyProjectType extends ProjectType {
+
+    public RubyProjectType() {
+        super(ProjectAttributes.RUBY_ID, ProjectAttributes.RUBY_NAME, true, false);
+        addConstantDefinition(Constants.LANGUAGE, "language", ProjectAttributes.PROGRAMMING_LANGUAGE);
     }
 }

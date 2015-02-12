@@ -12,7 +12,8 @@ package com.codenvy.ide.ext.ruby.shared;
 
 /** @author Vladyslav Zhukovskii */
 public interface ProjectAttributes {
-    String RUBY_ID             = "ruby";
-    String RUBY_NAME           = "Ruby Project";
-    String RUBY_CATEGORY       = "Ruby";
+    String RUBY_ID              = "ruby";
+    String RUBY_NAME            = "Ruby Project";
+    String RUBY_CATEGORY        = "Ruby";
+    String PROGRAMMING_LANGUAGE = "ruby";
 }

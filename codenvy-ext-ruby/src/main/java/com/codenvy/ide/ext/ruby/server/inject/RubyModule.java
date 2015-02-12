@@ -10,10 +10,11 @@
  *******************************************************************************/
 package com.codenvy.ide.ext.ruby.server.inject;
 
-import com.codenvy.ide.ext.ruby.server.project.type.RubyProjectTypeDescriptionExtension;
-import com.codenvy.ide.ext.ruby.server.project.type.RubyProjectTypeExtension;
+import com.codenvy.api.project.server.type.ProjectType;
+import com.codenvy.ide.ext.ruby.server.project.type.RubyProjectType;
 import com.codenvy.inject.DynaModule;
 import com.google.inject.AbstractModule;
+import com.google.inject.multibindings.Multibinder;
 
 /** @author Vladyslav Zhukovskii */
 @DynaModule
@@ -21,7 +22,6 @@ public class RubyModule extends AbstractModule {
     /** {@inheritDoc} */
     @Override
     protected void configure() {
-        bind(RubyProjectTypeExtension.class);
-        bind(RubyProjectTypeDescriptionExtension.class);
+        Multibinder.newSetBinder(binder(), ProjectType.class).addBinding().to(RubyProjectType.class);
     }
 }

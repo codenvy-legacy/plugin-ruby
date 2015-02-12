@@ -8,14 +8,19 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.ide.ext.ruby.client.wizard;
+package com.codenvy.ide.ext.ruby.server.project.type;
 
-import com.codenvy.ide.api.mvp.View;
-import com.google.inject.ImplementedBy;
+import com.codenvy.api.project.server.type.ProjectType;
+import com.codenvy.api.project.shared.Constants;
+import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
 
-/** @author Vladyslav Zhukovskii */
-@ImplementedBy(RubyPageViewImpl.class)
-public interface RubyPageView extends View<RubyPageView.ActionDelegate> {
-    public interface ActionDelegate {
+/**
+ * @author Vitaly Parfonov
+ */
+public class RubyProjectType extends ProjectType {
+
+    public RubyProjectType() {
+        super(ProjectAttributes.RUBY_ID, ProjectAttributes.RUBY_NAME, true, false);
+        addConstantDefinition(Constants.LANGUAGE, "language", ProjectAttributes.PROGRAMMING_LANGUAGE);
     }
 }

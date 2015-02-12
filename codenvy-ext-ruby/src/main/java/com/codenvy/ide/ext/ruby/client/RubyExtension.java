@@ -33,17 +33,4 @@ public class RubyExtension {
         @Source("com/codenvy/ide/ext/ruby/client/image/ruby.svg")
         SVGResource rubyCategoryIcon();
     }
-
-    @Inject
-    public RubyExtension(Provider<RubyPagePresenter> rubyPagePresenterProvider, Provider<SelectRunnerPagePresenter> runnerPagePresenter,
-                         NotificationManager notificationManager, ProjectTypeWizardRegistry projectTypeWizardRegistry,
-                         ParserResource parserResource, IconRegistry iconRegistry) {
-        ProjectWizard wizard = new ProjectWizard(notificationManager);
-        wizard.addPage(rubyPagePresenterProvider);
-        wizard.addPage(runnerPagePresenter);
-
-        projectTypeWizardRegistry.addWizard("ruby", wizard);
-
-        iconRegistry.registerIcon(new Icon(ProjectAttributes.RUBY_CATEGORY + ".samples.category.icon", parserResource.rubyCategoryIcon()));
-    }
 }

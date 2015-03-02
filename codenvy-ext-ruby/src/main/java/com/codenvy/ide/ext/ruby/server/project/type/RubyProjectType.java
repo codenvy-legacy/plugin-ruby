@@ -14,13 +14,19 @@ import com.codenvy.api.project.server.type.ProjectType;
 import com.codenvy.api.project.shared.Constants;
 import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
 
+import java.util.Arrays;
+
+import static com.codenvy.ide.api.projecttype.RunnerCategory.RUBY;
+
 /**
  * @author Vitaly Parfonov
+ * @author Dmitry Shnurenko
  */
 public class RubyProjectType extends ProjectType {
 
     public RubyProjectType() {
         super(ProjectAttributes.RUBY_ID, ProjectAttributes.RUBY_NAME, true, false);
         addConstantDefinition(Constants.LANGUAGE, "language", ProjectAttributes.PROGRAMMING_LANGUAGE);
+        addRunnerCategories(Arrays.asList(RUBY.toString()));
     }
 }

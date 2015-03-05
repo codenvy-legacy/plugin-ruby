@@ -20,7 +20,7 @@
     </parent>
     <groupId>com.codenvy.plugin-ruby</groupId>
     <artifactId>codenvy-plugin-ruby-parent</artifactId>
-    <version>1.6.0-SNAPSHOT</version>
+    <version>1.6.0</version>
     <packaging>pom</packaging>
     <name>Codenvy Plugin Ruby :: Parent</name>
     <modules>
@@ -29,7 +29,7 @@
     <scm>
         <connection>scm:git:git@github.com:codenvy/plugin-ruby.git</connection>
         <developerConnection>scm:git:git@github.com:codenvy/plugin-ruby.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>1.6.0</tag>
     </scm>
     <repositories>
         <repository>

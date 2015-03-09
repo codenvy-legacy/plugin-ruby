@@ -8,20 +8,20 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.ide.ext.ruby.client.inject;
+package org.eclipse.che.ide.ext.ruby.server.inject;
 
-import com.codenvy.ide.api.extension.ExtensionGinModule;
-import com.codenvy.ide.api.projecttype.wizard.ProjectWizardRegistrar;
-import com.codenvy.ide.ext.ruby.client.wizard.RubyProjectWizardRegistrar;
-import com.google.gwt.inject.client.AbstractGinModule;
-import com.google.gwt.inject.client.multibindings.GinMultibinder;
+import org.eclipse.che.api.project.server.type.ProjectType;
+import org.eclipse.che.ide.ext.ruby.server.project.type.RubyProjectType;
+import org.eclipse.che.inject.DynaModule;
+import com.google.inject.AbstractModule;
+import com.google.inject.multibindings.Multibinder;
 
 /** @author Vladyslav Zhukovskii */
-@ExtensionGinModule
-public class RubyGinModule extends AbstractGinModule {
+@DynaModule
+public class RubyModule extends AbstractModule {
     /** {@inheritDoc} */
     @Override
     protected void configure() {
-        GinMultibinder.newSetBinder(binder(), ProjectWizardRegistrar.class).addBinding().to(RubyProjectWizardRegistrar.class);
+        Multibinder.newSetBinder(binder(), ProjectType.class).addBinding().to(RubyProjectType.class);
     }
 }

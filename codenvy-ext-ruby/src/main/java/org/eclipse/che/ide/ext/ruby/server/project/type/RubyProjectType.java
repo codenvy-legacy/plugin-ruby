@@ -8,15 +8,15 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.ide.ext.ruby.server.project.type;
+package org.eclipse.che.ide.ext.ruby.server.project.type;
 
-import com.codenvy.api.project.server.type.ProjectType;
-import com.codenvy.api.project.shared.Constants;
-import com.codenvy.ide.ext.ruby.shared.ProjectAttributes;
+import org.eclipse.che.api.project.server.type.ProjectType;
+import org.eclipse.che.api.project.shared.Constants;
+import org.eclipse.che.ide.ext.ruby.shared.ProjectAttributes;
 
 import java.util.Arrays;
 
-import static com.codenvy.ide.api.projecttype.RunnerCategory.RUBY;
+import static org.eclipse.che.ide.api.project.type.RunnerCategory.RUBY;
 
 /**
  * @author Vitaly Parfonov
